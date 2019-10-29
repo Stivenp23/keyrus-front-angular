@@ -1,0 +1,103 @@
+.sub-footer {
+  background-color: #242424;
+  padding: 30px 0;
+  .container {
+    .row-footer {
+      display: flex;
+      justify-content: space-between;
+      @media(max-width: 990px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      .col {
+        color: #9d9d9d;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &:first-child {
+          max-width: 300px;
+        }
+        form{
+          .input-group{
+            input{
+              &.form-control{
+                background-color: #2e2e2e;
+                border: none;
+                &::-webkit-input-placeholder { /* Edge */
+                  color: #7d7d7d;
+                }
+
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                  color: #7d7d7d;
+                }
+
+                &::placeholder {
+                  color: #7d7d7d;
+                }
+              }
+            }
+           .input-group-prepend{
+             .input-group-text{
+               background-color: #7d7d7d;
+               border: none;
+               padding: 0;
+               width: 40px;
+               justify-content: center;
+               align-items: center;
+               font-size: 24px;
+               font-weight: bold;
+               button{
+                 background-color: #7d7d7d;
+                 border: none;
+                 i{
+                   color: #2e2e2e;
+                 }
+               }
+             }
+           }
+          }
+        }
+        .content {
+          ul{
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            @media(max-width: 990px) {
+              margin-bottom: 20px;
+              justify-content: center;
+            }
+            @media(max-width: 600px) {
+              align-items: center;
+            }
+            li{
+              padding: 0 6px;
+              display: flex;
+              background-color: #2e2e2e;
+              margin: 0 5px;
+              width: 40px;
+              height: 40px;
+              justify-content: center;
+              align-items: center;
+              a{
+                color: #7d7d7d;
+                i{
+                  color: #7d7d7d;
+                }
+              }
+            }
+          }
+        }
+        p {
+          margin-bottom: 0;
+          font-size: 14px;
+          line-height: 1.1;
+          @media(max-width: 990px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
