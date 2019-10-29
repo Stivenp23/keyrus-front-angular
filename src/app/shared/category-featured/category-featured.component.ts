@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './category-featured.component.html',
   styleUrls: ['./category-featured.component.scss']
 })
-export class TabsProductComponent implements OnInit {
+export class CategoryFeaturedComponent implements OnInit {
 
   constructor() { }
 
