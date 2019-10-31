@@ -13,6 +13,8 @@ import {ProductFeaturedComponent} from './shared/product-featured/product-featur
 import {BoxContentComponent} from './shared/box-content/box-content.component';
 import {SubFooterComponent} from './shared/layout/sub-footer/sub-footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { FiltersProductComponent } from './shared/filters-product/filters-product.component';
+import { BannerComponent } from './shared/banner/banner.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +27,9 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
         CategoryFeaturedComponent,
         ProductFeaturedComponent,
         BoxContentComponent,
-        SubFooterComponent
+        SubFooterComponent,
+        FiltersProductComponent,
+        BannerComponent
     ],
     imports: [
         BrowserModule,

@@ -1,0 +1,84 @@
+.box{
+  .container{
+    padding: 40px 0;
+    border-top: 3px solid #bcb5a7;
+    .row{
+      > div {
+        &:first-child{
+          @media(max-width: 600px){
+            margin-bottom: 27px;
+          }
+        }
+        &:last-child{
+          @media(max-width: 990px){
+            margin-top: 27px;
+          }
+        }
+        .content-box{
+          background-color: #dfdbd4;
+          padding: 30px 18px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          h4{
+            width: 100%;
+            text-transform: uppercase;
+            font-size: 20px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+          }
+          p{
+            font-size: 15px;
+            line-height: 1.5;
+            color: black;
+            width: 100%;
+            text-align: left;
+            font-weight: 400;
+          }
+          .row-date{
+            display: flex;
+            width: 100%;
+            margin-bottom: 18px;
+            .col-date{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              &:first-child{
+                max-width: 90px;
+                text-align: center;
+                margin-right: 18px;
+              }
+              .date{
+                height: 100%;
+                background-color: #57c5a0;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 15px;
+                span{
+                  font-size: 16px;
+                  line-height: 1.1;
+                  font-weight: bold;
+                }
+              }
+              h5{
+                font-size: 18px;
+                line-height: 1.1;
+                margin-bottom: 0;
+                font-weight: bold;
+              }
+              p{
+                font-size: 14px;
+                line-height: 1.1;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

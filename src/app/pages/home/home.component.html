@@ -1,4 +1,34 @@
 <app-header></app-header>
-<p>home works!</p>
+<main class="container-full">
+    <section class="container product-featured">
+        <div class="container-produc">
+            <div class="content-title-product">
+                <h3>New arrivals on FooseShoes</h3>
+                <a class="btn-action">Show All</a>
+            </div>
+        </div>
+        <div class="container-produc">
+            <div class="row row-product">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col" *ngFor="let product of products">
+                    <app-product-featured [product]="product"></app-product-featured>
+                </div>
+            </div>
+        </div>
+        <div class="container-produc">
+            <div class="content-title-product">
+                <h3>Best sellers of the month</h3>
+                <a class="btn-action">Show All</a>
+            </div>
+        </div>
+        <div class="container-produc">
+            <div class="row row-product">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col" *ngFor="let product of products">
+                    <app-product-featured [product]="product"></app-product-featured>
+                </div>
+            </div>
+        </div>
+    </section>
+    <app-box-content></app-box-content>
+</main>
 <app-sub-footer></app-sub-footer>
 <app-footer></app-footer>

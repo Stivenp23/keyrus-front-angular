@@ -1,0 +1,96 @@
+
+.content-product{
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 25px;
+  .image{
+    border-bottom: 2px solid #cccccc;
+    padding: 0 0 11px;
+    text-align: center;
+    position: relative;
+    .alert{
+      color: #ffffff;
+      margin-bottom: 0;
+      position: absolute;
+      top: 0;
+      right: 12px;
+      border-radius: 0;
+      font-size: 11px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      &.onsale{
+        background-color: #242424;
+      }
+      &.outstock{
+        background-color: #f27e4b;
+      }
+    }
+  }
+  &:hover{
+    .box {
+      .content-title{
+        justify-content: center;
+        .title{
+          opacity: 0;
+          width: 0;
+          transition: 0.1ms;
+          padding: 0;
+        }
+        .icons{
+          opacity: 1;
+          width: auto;
+          transition: 1s;
+        }
+      }
+    }
+  }
+  .box{
+    display: flex;
+    width: 90%;
+    margin: 0 auto 0;
+    .price{
+      background-color: #57c5a0;
+      color: #ffffff;
+      padding: 21px 10px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.1;
+      margin-top: -19px;
+      display: flex;
+      align-items: center;
+      z-index: 1;
+    }
+    .content-title{
+      display: flex;
+      width: 100%;
+      padding: 15px 0 15px 0;
+      align-items: center;
+      font-size: 18px;
+      line-height: 1.1;
+      font-weight: 500;
+      justify-content: start;
+      .title{
+        opacity: 1;
+        transition: 1s;
+        width: auto;
+        padding-left: 20px;
+      }
+      .icons{
+        opacity: 0;
+        width: 0;
+        display: flex;
+        color: #6e6e6e;
+        > div {
+          padding: 0 12px;
+          &:hover{
+            color: #57c5a0;
+          }
+        }
+      }
+    }
+  }
+}

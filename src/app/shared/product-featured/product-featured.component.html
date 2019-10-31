@@ -1,1 +1,32 @@
-<p>product-featured works!</p>
+<div class="content-product">
+    <div class="image">
+        <img [src]="product.img"/>
+        <div class="alert" [ngClass]="[(product.status === 1 ? 'onsale': '') || (product.status === 2 ? 'outstock': '')]">
+            {{product.textAlert}}
+        </div>
+    </div>
+    <div class="box">
+        <div class="price">
+            {{product.price}}
+        </div>
+        <div class="content-title">
+            <div class="title">
+                {{product.title}}
+            </div>
+            <div class="icons">
+                <div class="eye">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+                <div class="start">
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <div class="link">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                </div>
+                <div class="car">
+                    <i aria-hidden="true" class="fa fa-cart-arrow-down"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

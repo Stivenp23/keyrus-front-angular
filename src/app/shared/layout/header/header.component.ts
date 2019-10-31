@@ -9,21 +9,27 @@ export class HeaderComponent implements OnInit {
     menu = [
         {
             title: 'Home',
+            href: '/'
         },
         {
             title: 'Products',
+            href: '/productos'
         },
         {
             title: 'About',
+            href: '/'
         },
         {
             title: 'Pages',
+            href: '/'
         },
         {
             title: 'Blog',
+            href: '/'
         },
         {
             title: 'Contact',
+            href: '/'
         },
     ]
 

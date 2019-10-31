@@ -1,5 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 body{
+  background-color: #ebe7df;
+  > .container-full{
+    @media(max-width: 600px){
+      padding: 30px 20px 0;
+    }
+  }
+  .btn-action{
+    color: #bcb5a7 !important;
+    border: 1px solid #bcb5a7;
+    width: auto;
+    padding: 6px 20px;
+    transition: 1s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media(max-width: 600px){
+      width: 110px;
+      padding: 0 7px;
+    }
+    &:hover{
+      color: #ffffff !important;
+      background-color: #bcb5a7;
+      border: 1px solid #bcb5a7;
+      transition: 1s;
+    }
+  }
   .container-full{
     width: 100%;
     max-width: 1920px;
@@ -7,5 +34,31 @@ body{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    .container-produc {
+      padding: 0;
+      .content-title-product {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+    }
+    .miga-pan{
+      font-size: 12px;
+      line-height: 1.1;
+      color: #bfb9ab;
+      margin-left: 14px;
+      @media(max-width: 768px){
+        margin-left: 0;
+      }
+    }
+  }
+  h3{
+    color: #242424;
+    font-size: 24px;
+    line-height: 1.1;
+    padding-bottom: 0;
+    display: flex;
+    align-items: flex-end;
   }
 }

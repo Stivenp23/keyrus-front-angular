@@ -1,1 +1,42 @@
-<p>list-product works!</p>
+<app-header></app-header>
+<app-banner></app-banner>
+<app-filters-product></app-filters-product>
+<main class="container-full">
+    <section class="container product-featured">
+        <div class="container-produc">
+            <div class="content-title-product">
+                <h3>
+                    All Products
+                    <div class="miga-pan">Home > All Products</div>
+                </h3>
+                <div class="interaction">
+                    <p>View as</p>
+                    <a class="btn-action grid" (click)="type = true"><img src="assets/images/col-icon.png"/></a>
+                    <a class="btn-action list" (click)="type = false"><img src="assets/images/list-icon.png"/></a>
+                    <a class="btn-action sort">Sort alphabetically <i class="fa fa-arrow-circle-o-down"
+                                                                 aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-produc">
+            <ng-container *ngIf="type; then grid; else list"></ng-container>
+            <ng-template #grid>
+                <div class="row row-product">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col" *ngFor="let product of products">
+                        <app-product-featured [product]="product"></app-product-featured>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template #list>
+                <div class="row row-product">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col" *ngFor="let product of products">
+                        <app-product-featured [product]="product"></app-product-featured>
+                    </div>
+                </div>
+            </ng-template>
+        </div>
+    </section>
+    <app-box-content></app-box-content>
+</main>
+<app-sub-footer></app-sub-footer>
+<app-footer></app-footer>
