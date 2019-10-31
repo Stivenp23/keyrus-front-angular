@@ -15,6 +15,7 @@ import {SubFooterComponent} from './shared/layout/sub-footer/sub-footer.componen
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FiltersProductComponent } from './shared/filters-product/filters-product.component';
 import { BannerComponent } from './shared/banner/banner.component';
+import { CategoryComponent } from './shared/category/category.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import { BannerComponent } from './shared/banner/banner.component';
         BoxContentComponent,
         SubFooterComponent,
         FiltersProductComponent,
-        BannerComponent
+        BannerComponent,
+        CategoryComponent
     ],
     imports: [
         BrowserModule,

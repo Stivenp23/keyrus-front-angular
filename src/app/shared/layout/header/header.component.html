@@ -20,14 +20,13 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menumain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="nav()">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="menumain">
                     <ul class="navbar-nav mr-auto">
                             <li class="nav-item" *ngFor="let menuMain of menu">
                                 <a [routerLink]="menuMain.href"   class="nav-link" href="#">{{ menuMain.title}}</a>
                             </li>
                     </ul>
-                    <div class="form-inline">
+                    <div class="form-inline desktop">
                         <div class="mark-up">
                            <div class="col">
                                <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -37,6 +36,18 @@
                                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                                <span class="count">0</span>
                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-inline mobile">
+                    <div class="mark-up">
+                        <div class="col">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <span>30</span>
+                        </div>
+                        <div class="col">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <span class="count">0</span>
                         </div>
                     </div>
                 </div>

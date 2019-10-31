@@ -1,0 +1,39 @@
+.category {
+  background-color: #2e2e2e;
+  padding: 30px 0;
+  .row {
+    @media(max-width: 767px){
+      flex-direction: column;
+    }
+    .col {
+      @media(max-width: 767px){
+       margin-bottom: 10px;
+      }
+      .images {
+        position: relative;
+        img {
+          width: 100%;
+        }
+        .content {
+          position: absolute;
+          background-color: #00000094;
+          color: white;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          max-width: 230px;
+          max-height: 50px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 24px;
+          line-height: 1.1;
+        }
+      }
+    }
+
+  }
+}

@@ -47,18 +47,69 @@ header {
     background-color: white;
     color: #242424;
     .container{
+      .form-inline{
+        &.desktop{
+          display: block;
+          @media(max-width: 767px){
+            display: none;
+          }
+        }
+        &.mobile{
+          display: none;
+          @media(max-width: 767px){
+            display: block;
+          }
+        }
+        .mark-up{
+          display: flex;
+          width: 100%;
+          .col{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #eeeeee;
+            padding: 10px 24px;
+            @media(max-width: 767px){
+              padding: 10px 6px;
+            }
+            &:last-child{
+              border-right: 1px solid #eeeeee;
+              @media(max-width: 600px){
+                border: none;
+              }
+            }
+            @media(max-width: 600px){
+              border: none;
+            }
+            i{
+              color: #7d7d7d;
+            }
+            span{
+              margin-left: 10px;
+              background-color: #adadad;
+              text-align: center;
+              padding: 2px 7px;
+              border-radius: 5px;
+              color: white;
+              &.count{
+                background-color: #57c5a0;
+              }
+            }
+          }
+        }
+      }
       .navbar{
         padding-top: 0;
         padding-bottom: 0;
         @media(max-width: 990px){
           padding: 9px 0;
-          justify-content: flex-end;
+          justify-content: space-between;
         }
         .collapse{
           @media(max-width: 990px){
             position: absolute;
             width: 100%;
-            top: 50px;
+            top: 60px;
             background-color: white;
             z-index: 11;
           }
@@ -87,42 +138,7 @@ header {
              }
             }
           }
-          .form-inline{
-            .mark-up{
-              display: flex;
-              width: 100%;
-              .col{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-left: 1px solid #eeeeee;
-                padding: 10px 24px;
-                &:last-child{
-                  border-right: 1px solid #eeeeee;
-                  @media(max-width: 600px){
-                    border: none;
-                  }
-                }
-                @media(max-width: 600px){
-                  border: none;
-                }
-                i{
-                  color: #7d7d7d;
-                }
-                span{
-                  margin-left: 10px;
-                  background-color: #adadad;
-                  text-align: center;
-                  padding: 2px 7px;
-                  border-radius: 5px;
-                  color: white;
-                  &.count{
-                    background-color: #57c5a0;
-                  }
-                }
-              }
-            }
-          }
+
         }
       }
     }
